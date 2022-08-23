@@ -1,2 +1,23 @@
-Hi! 
-this is a test
+## Data
+
+The data folder contains the original train and test data we obtain from WiDS Datathon 2022 in Kaggle. It also contains cleaned datasets for train and test datasets seperately with reduced predictors. Additionally, there are also config files for data_cleaning_and_linear_regression.ipynb.
+
+## EDA
+
+There are four versions of EDA. EDA_1 and EDA_3 are general EDA that reveals patterns in the data. EDA_2 looks specifically at the year and state factors. EDA_4 finds the information values for each predictors.
+
+## data_cleaning_and_linear_regression
+
+data_cleaning_and_linear_regression.ipynb contains the full process of missing value imputation, feature engineering, dimension reduction through K-means clustering, and variable selection through stepwise selection. It produces cleaned datasets with 38 predictors which is used for SVR, neural network and gradient boosting.
+
+## neural_network
+
+This folder contains multiple files that build a neural network model based on train_38_predictors.csv resulting one of the best performance among all models.
+
+## SVR
+
+This folder contains one file that builds support vector regression using linear kernel. It also uses grid search to find best values of parameters.
+
+## XGboost
+
+This folder contains one file that builds a gradient boosting model which also perform well among these models.
